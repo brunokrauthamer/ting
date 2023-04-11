@@ -9,7 +9,7 @@ def exists_word(word, instance):
         for index, line in enumerate(lines):
             line_lower = line.lower()
             if word_lower in line_lower:
-                ocorrencias.append({ "linha": index + 1 })
+                ocorrencias.append({"linha": index + 1})
         if bool(ocorrencias):
             dict_info = {
                 "palavra": word,
@@ -31,7 +31,7 @@ def search_by_word(word, instance):
         for index, line in enumerate(lines):
             line_lower = line.lower()
             if word_lower in line_lower:
-                ocorrencias.append({ "linha": index + 1, "conteudo": line })
+                ocorrencias.append({"linha": index + 1, "conteudo": line})
         if bool(ocorrencias):
             dict_info = {
                 "palavra": word,
